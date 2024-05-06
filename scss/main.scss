@@ -1,0 +1,87 @@
+$primary: white;
+$secondary:black;
+$light:grey;
+$font-stack: Helvetica, sans-serif;
+$padding-10px:10px 0 10px 0;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {font: 100% $font-stack;letter-spacing:0.2px;}
+section{padding:20px 0 20px 0;}
+.card{margin-bottom:20px;}
+
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:ghostwhite;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color:black;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: $light;
+    color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+    background-color: lightgrey;
+    color: white;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    margin-bottom: 100px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      display: none !important;
+    }
+    .sidebar a {float: left;}
+    
+    div.content {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+      display:none!important
+    }
+  }
+
+  .hero-image{
+    background-image: url("/img/top-view-salts-cream-container.jpg");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow:2px 2px 3px $light;
+  }
+
+  .img-fluid{padding:$padding-10px;}
