@@ -85,13 +85,10 @@ section{padding:20px 0 20px 0;}
 
   .img-fluid{padding:$padding-10px;}
 
-  .openbtn {
-    cursor: pointer;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
+  .mobile{display:none;}
+  .desktop{display:block;}
 
-  .toggle-sidebar{
-    display: inline-block !important;
+  @media screen and (max-width: 400px){
+    .mobile{display:block;}
+    .desktop{display:none;}
   }
