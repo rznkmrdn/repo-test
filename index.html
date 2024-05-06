@@ -7,12 +7,18 @@
         <link rel="stylesheet" href="css/main.min.css">
         <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
         <script src="https://kit.fontawesome.com/0d47168720.js" crossorigin="anonymous"></script>
+
     </head>
         <body class="bg-primary">
             <nav id="header" class="navbar sticky-top navbar-expand navbar-dark bg-dark">          
               <div class="container-fluid">
                     <div class="navbar-header">
+                      <div class="toggle-sidebar" id="toggle-sidebar">
+                        <button class="openbtn" onclick="openNav()">☰</button></div>
                       <a class="navbar-brand" href="#">Logo</a>
+                      <button class="navbar-toggler" type="button" data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
                     </div>
                     <ul class="nav navbar-nav navbar-right mr-auto">
                       <li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>

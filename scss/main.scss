@@ -84,3 +84,14 @@ section{padding:20px 0 20px 0;}
   }
 
   .img-fluid{padding:$padding-10px;}
+
+  .openbtn {
+    cursor: pointer;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .toggle-sidebar{
+    display:inline-block;
+  }
