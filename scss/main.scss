@@ -65,7 +65,7 @@ section{padding:20px 0 20px 0;}
   }
 
   .hero-image{
-    background-image: url("https://drive.google.com/file/d/1ufqiSxls8PT7JAfiyoZ2k4QH4pV_-Lrt/view?usp=drive_link");
+    background-image: url("/img/top-view-salts-cream-container.jpg");
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,22 +83,14 @@ section{padding:20px 0 20px 0;}
     text-shadow:2px 2px 3px $light;
   }
 
-  .img-fluid{padding:$padding-10px;}
+.img-fluid{padding:$padding-10px;}
 
-  .mobile{
-    display: none;
-  }
+.mobile{display: none;}
+.desktop{display:block;}
 
-  .desktop{
-    display: block;
-  }
+.offcanvas{background-color:ghostwhite;}
 
-  @media screen and (max-width: 700px) {
-    .mobile{
-      display:inline-block;
-      margin-right:10px;
-    }
-    .desktop{
-      display:none;
-    }
-  }
+@media screen and (max-width:700px){
+  .mobile{display:inline-block;margin-right:10px;}
+  .desktop{display:none;}
+}
